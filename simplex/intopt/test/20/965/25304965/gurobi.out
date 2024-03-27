@@ -1,0 +1,51 @@
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 378 nonzeros
+Optimize a model with 20 rows, 40 columns and 378 nonzeros
+Model fingerprint: 0x30facb50
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+01, 9e+01]
+Found heuristic solution: objective 62.0000000
+Found heuristic solution: objective 123.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 358 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.773048e+02, 16 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  477.30482    0    9  123.00000  477.30482   288%     -    0s
+H    0     0                     285.0000000  477.30482  67.5%     -    0s
+     0     0  474.45342    0   10  285.00000  474.45342  66.5%     -    0s
+     0     0  474.45342    0   10  285.00000  474.45342  66.5%     -    0s
+     0     2  474.45342    0   10  285.00000  474.45342  66.5%     -    0s
+H   18    16                     421.0000000  460.00341  9.26%   2.4    0s
+H   54    38                     429.0000000  459.80856  7.18%   2.6    0s
+H  224    43                     436.0000000  454.24363  4.18%   2.6    0s
+
+Explored 326 nodes (887 simplex iterations) in 0.20 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 436 429 421 ... 62
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.360000000000e+02, best bound 4.360000000000e+02, gap 0.0000%
+
+Wrote result file 'a.sol'
+

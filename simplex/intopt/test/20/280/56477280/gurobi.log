@@ -1,0 +1,52 @@
+
+Gurobi 9.0.0 (linux64, gurobi_cl) logging started Thu Nov 19 23:00:31 2020
+
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 377 nonzeros
+Optimize a model with 20 rows, 40 columns and 377 nonzeros
+Model fingerprint: 0x4714c324
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+01, 9e+01]
+Found heuristic solution: objective 53.0000000
+Found heuristic solution: objective 83.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 357 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 1.220845e+03, 22 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1220.84477    0   10   83.00000 1220.84477  1371%     -    0s
+     0     0 1218.62865    0   10   83.00000 1218.62865  1368%     -    0s
+     0     0 1218.62865    0   10   83.00000 1218.62865  1368%     -    0s
+     0     2 1214.10417    0   10   83.00000 1214.10417  1363%     -    0s
+H  116    47                    1175.0000000 1214.10417  3.33%   1.9    0s
+*  255    65              18    1193.0000000 1206.65862  1.14%   2.0    0s
+
+Explored 392 nodes (750 simplex iterations) in 0.19 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 4: 1193 1175 83 53 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.193000000000e+03, best bound 1.193000000000e+03, gap 0.0000%
+
+Wrote result file 'a.sol'
+

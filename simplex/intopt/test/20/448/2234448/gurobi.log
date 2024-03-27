@@ -1,0 +1,53 @@
+
+Gurobi 9.0.0 (linux64, gurobi_cl) logging started Thu Nov 19 17:49:05 2020
+
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 372 nonzeros
+Optimize a model with 20 rows, 40 columns and 372 nonzeros
+Model fingerprint: 0xc8718b74
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+01, 8e+01]
+Found heuristic solution: objective 35.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 352 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 1.233284e+03, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1233.28396    0    9   35.00000 1233.28396  3424%     -    0s
+     0     0 1229.31713    0    9   35.00000 1229.31713  3412%     -    0s
+     0     0 1229.31713    0    9   35.00000 1229.31713  3412%     -    0s
+     0     2 1229.31713    0    9   35.00000 1229.31713  3412%     -    0s
+H  199    92                     980.0000000 1227.20170  25.2%   1.5    0s
+H  561   245                     985.0000000 1219.64366  23.8%   1.6    0s
+H 1105   272                    1177.0000000 1212.38646  3.01%   1.6    0s
+* 1406   221              22    1184.0000000 1210.92310  2.27%   1.6    0s
+
+Explored 2945 nodes (5306 simplex iterations) in 0.35 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 5: 1184 1177 985 ... 35
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.184000000000e+03, best bound 1.184000000000e+03, gap 0.0000%
+
+Wrote result file 'a.sol'
+

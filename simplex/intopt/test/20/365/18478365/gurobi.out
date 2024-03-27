@@ -1,0 +1,50 @@
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 382 nonzeros
+Optimize a model with 20 rows, 40 columns and 382 nonzeros
+Model fingerprint: 0x00330d59
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [2e+00, 8e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+01, 9e+01]
+Found heuristic solution: objective 10.0000000
+Found heuristic solution: objective 119.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 362 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.888066e+02, 17 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  488.80657    0   10  119.00000  488.80657   311%     -    0s
+H    0     0                     219.0000000  488.80657   123%     -    0s
+     0     0  484.72102    0   10  219.00000  484.72102   121%     -    0s
+H    0     0                     262.0000000  484.72102  85.0%     -    0s
+H    0     0                     415.0000000  484.72102  16.8%     -    0s
+     0     2  484.71221    0   10  415.00000  484.71221  16.8%     -    0s
+H   60    39                     457.0000000  480.52967  5.15%   1.8    0s
+
+Explored 380 nodes (714 simplex iterations) in 0.13 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 457 415 262 ... 10
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.570000000000e+02, best bound 4.570000000000e+02, gap 0.0000%
+
+Wrote result file 'a.sol'
+

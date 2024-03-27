@@ -1,0 +1,54 @@
+
+Gurobi 9.0.0 (linux64, gurobi_cl) logging started Fri Nov 20 00:30:29 2020
+
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 372 nonzeros
+Optimize a model with 20 rows, 40 columns and 372 nonzeros
+Model fingerprint: 0x52a02ad1
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+01, 9e+01]
+Found heuristic solution: objective 18.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 352 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 1.989783e+03, 21 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1989.78335    0   10   18.00000 1989.78335      -     -    0s
+     0     0 1984.50717    0    9   18.00000 1984.50717      -     -    0s
+     0     0 1984.50717    0    9   18.00000 1984.50717      -     -    0s
+     0     2 1979.15450    0    9   18.00000 1979.15450      -     -    0s
+*  613   292              41    1816.0000000 1967.93411  8.37%   2.1    0s
+*  896   391              30    1836.0000000 1965.52571  7.05%   2.2    0s
+* 1823   704              33    1855.0000000 1960.36413  5.68%   2.3    0s
+* 1843   595              26    1892.0000000 1960.36413  3.61%   2.3    0s
+H 2618   355                    1934.0000000 1952.59241  0.96%   2.3    0s
+
+Explored 3607 nodes (8408 simplex iterations) in 0.33 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 1934 1892 1855 ... 18
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.934000000000e+03, best bound 1.934000000000e+03, gap 0.0000%
+
+Wrote result file 'a.sol'
+

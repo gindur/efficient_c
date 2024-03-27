@@ -1,0 +1,52 @@
+
+Gurobi 9.0.0 (linux64, gurobi_cl) logging started Thu Nov 19 17:34:16 2020
+
+Using license file /home/js/gurobi/gurobi.lic
+Set parameter TimeLimit to value 600
+Set parameter Cuts to value 0
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only
+
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (linux64)
+Copyright (c) 2019, Gurobi Optimization, LLC
+
+Read LP format model from file a.lp
+Reading time = 0.00 seconds
+Obj: 20 rows, 40 columns, 372 nonzeros
+Optimize a model with 20 rows, 40 columns and 372 nonzeros
+Model fingerprint: 0x77494722
+Variable types: 20 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+00]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+01, 9e+01]
+Found heuristic solution: objective 77.0000000
+Found heuristic solution: objective 189.0000000
+Presolve removed 0 rows and 20 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 20 columns, 352 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.943442e+02, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  494.34422    0    8  189.00000  494.34422   162%     -    0s
+H    0     0                     316.0000000  494.34422  56.4%     -    0s
+H    0     0                     425.0000000  494.34422  16.3%     -    0s
+     0     0  494.34422    0    8  425.00000  494.34422  16.3%     -    0s
+     0     2  485.40421    0    8  425.00000  485.40421  14.2%     -    0s
+H   40    37                     454.0000000  480.01987  5.73%   1.9    0s
+
+Explored 178 nodes (375 simplex iterations) in 0.25 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 5: 454 425 316 ... 77
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.540000000000e+02, best bound 4.540000000000e+02, gap 0.0000%
+
+Wrote result file 'a.sol'
+
